@@ -1,4 +1,5 @@
 import NavBar from '../../components/NavBar'
+import Faq from './Components/Faq'
 import Features from './Components/Features'
 import HeroSection from './Components/HeroSection'
 import Tips from './Components/Tips'
@@ -23,7 +24,8 @@ export default function Home() {
       </div>
       <div className="bg-white">
         <Tips />
-        <Features/>
+        <Features />
+        <Faq />
       </div>
     </>
   )
