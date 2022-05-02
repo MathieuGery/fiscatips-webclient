@@ -1,6 +1,7 @@
 import NavBar from "../../components/NavBar";
 import { useState } from 'react'
 import { Switch } from '@headlessui/react'
+import Emoji from "../../components/Emoji";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -157,6 +158,7 @@ export default function Contact() {
                       type="submit"
                       className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     >
+                      <Emoji className="mr-2" symbol="📇" label="cool"/>
                       Prendre contact
                     </button>
                   </div>
