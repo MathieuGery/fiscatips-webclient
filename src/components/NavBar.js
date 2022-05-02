@@ -49,7 +49,7 @@ export default function NavBar() {
                   {item.name}
                 </a>
               ))}
-              <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+              <a href="/contact" className="font-medium text-indigo-600 hover:text-indigo-500">
                 Contact
               </a>
             </div>
@@ -97,7 +97,7 @@ export default function NavBar() {
                 ))}
               </div>
               <a
-                href="#"
+                href="/contact"
                 className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
               >
                 Contact
