@@ -1,6 +1,7 @@
 import NavBar from '../../components/NavBar'
 import Footer from '../../components/Footer'
 import HeroSection from './Components/HeroSection'
+import Tips from './Components/Tips'
 
 const navigation = [
   { name: 'Work', href: '/bite' },
@@ -16,7 +17,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
             <NavBar />
-            <HeroSection/>
+            <HeroSection />
           </div>
           <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
             <img
@@ -26,6 +27,9 @@ export default function Home() {
             />
           </div>
         </div>
+      </div>
+      <div className="flex justify-center items-center bg-white">
+        <Tips />
       </div>
       <Footer />
     </>
