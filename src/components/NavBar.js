@@ -7,7 +7,7 @@ const navigation = [
   { name: 'FiscaTips', href: '#' },
   { name: 'Actualités', href: '#' },
   { name: 'Blog', href: '#' },
-  { name: 'L\'Equipe', href: '#' },
+  { name: 'L\'Equipe', href: '/team' },
 ]
 
 export default function NavBar() {

@@ -1,11 +1,11 @@
 import React from "react";
 import Footer from "../../components/Footer";
-import HomeView from "./HomeView";
+import Team from "./TeamView";
 
-export function HomeContainer() {
+export function TeamContainer() {
   return (
     <div>
-      <HomeView title="Home" />
+      <Team title="Equipe"/>
       <Footer/>
     </div>
   );

@@ -1,14 +1,7 @@
 import NavBar from '../../components/NavBar'
-import Footer from '../../components/Footer'
+import Features from './Components/Features'
 import HeroSection from './Components/HeroSection'
 import Tips from './Components/Tips'
-
-const navigation = [
-  { name: 'Work', href: '/bite' },
-  { name: 'Services', href: '#' },
-  { name: 'About', href: '#' },
-  { name: 'Blog', href: '#' },
-]
 
 export default function Home() {
   return (
@@ -28,10 +21,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center bg-white">
+      <div className="bg-white">
         <Tips />
+        <Features/>
       </div>
-      <Footer />
     </>
   )
 }
