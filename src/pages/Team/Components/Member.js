@@ -7,7 +7,7 @@ export default function MemberComponent(props) {
           <div className="space-y-2">
             <div className="text-lg leading-6 font-medium space-y-1">
               <h3>{props.person.name}</h3>
-              <p className="text-indigo-600">{props.person.role}</p>
+              <p className="text-primary-600">{props.person.role}</p>
             </div>
             <ul role="list" className="flex justify-center space-x-5">
               <li>

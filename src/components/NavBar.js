@@ -32,11 +32,11 @@ export default function NavBar() {
                   <span className="sr-only">Workflow</span>
                   <img
                     className="h-8 w-auto sm:h-10"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                    src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
                   />
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">
-                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500">
                     <span className="sr-only">Open main menu</span>
                     <MenuIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -49,7 +49,7 @@ export default function NavBar() {
                   {item.name}
                 </a>
               ))}
-              <a href="/contact" className="font-medium text-indigo-600 hover:text-indigo-500">
+              <a href="/contact" className="font-medium text-primary-600 hover:text-primary-500">
                 Contact
               </a>
             </div>
@@ -74,12 +74,12 @@ export default function NavBar() {
                 <div>
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                    src="https://tailwindui.com/img/logos/workflow-mark-primary-600.svg"
                     alt=""
                   />
                 </div>
                 <div className="-mr-2">
-                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500">
                     <span className="sr-only">Close main menu</span>
                     <XIcon className="h-6 w-6" aria-hidden="true" />
                   </Popover.Button>
@@ -98,7 +98,7 @@ export default function NavBar() {
               </div>
               <a
                 href="/contact"
-                className="block w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
+                className="block w-full px-5 py-3 text-center font-medium text-primary-600 bg-gray-50 hover:bg-gray-100"
               >
                 Contact
               </a>

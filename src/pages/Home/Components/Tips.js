@@ -3,7 +3,7 @@ import { ScaleIcon } from "@heroicons/react/outline";
 export default function Tips() {
   return (
     <div className="mx-full  flex justify-center">
-      <section className="bg-indigo-800 rounded-2xl m-5">
+      <section className="bg-primary-800 rounded-2xl m-5">
         <div className="max-w-7xl mx-auto lg:px-8">
           <div className="py-12 px-4 sm:px-6 lg:pr-16">
             <div className="">
@@ -12,7 +12,7 @@ export default function Tips() {
             <blockquote className="mt-6">
               <div className="relative text-lg font-medium text-white">
                 <svg
-                  className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-indigo-600"
+                  className="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-primary-600"
                   fill="currentColor"
                   viewBox="0 0 32 32"
                   aria-hidden="true"
@@ -35,7 +35,7 @@ export default function Tips() {
                   </div>
                   <div className="ml-4">
                     <div className="text-base font-medium text-white">Judith Black</div>
-                    <div className="text-base font-medium text-indigo-200">CEO, Tuple</div>
+                    <div className="text-base font-medium text-primary-200">CEO, Tuple</div>
                   </div>
                 </div>
               </footer>

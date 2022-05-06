@@ -78,7 +78,7 @@ export default function Contact() {
                         name="first-name"
                         id="first-name"
                         autoComplete="given-name"
-                        className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                        className="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border-gray-300 rounded-md"
                       />
                     </div>
                   </div>
@@ -92,7 +92,7 @@ export default function Contact() {
                         name="last-name"
                         id="last-name"
                         autoComplete="family-name"
-                        className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                        className="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border-gray-300 rounded-md"
                       />
                     </div>
                   </div>
@@ -106,7 +106,7 @@ export default function Contact() {
                         name="email"
                         type="email"
                         autoComplete="email"
-                        className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                        className="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border-gray-300 rounded-md"
                       />
                     </div>
                   </div>
@@ -122,7 +122,7 @@ export default function Contact() {
                         <select
                           id="country"
                           name="country"
-                          className="h-full py-0 pl-4 pr-8 border-transparent bg-transparent text-gray-500 focus:ring-indigo-500 focus:border-indigo-500 rounded-md"
+                          className="h-full py-0 pl-4 pr-8 border-transparent bg-transparent text-gray-500 focus:ring-primary-500 focus:border-primary-500 rounded-md"
                         >
                           <option>EU</option>
                           <option>CA</option>
@@ -134,7 +134,7 @@ export default function Contact() {
                         name="phone-number"
                         id="phone-number"
                         autoComplete="tel"
-                        className="py-3 px-4 block w-full pl-20 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
+                        className="py-3 px-4 block w-full pl-20 focus:ring-primary-500 focus:border-primary-500 border-gray-300 rounded-md"
                         placeholder="+33 6 06 06 06 06"
                       />
                     </div>
@@ -148,7 +148,7 @@ export default function Contact() {
                         id="message"
                         name="message"
                         rows={4}
-                        className="py-3 px-4 block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
+                        className="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border border-gray-300 rounded-md"
                         defaultValue={''}
                       />
                     </div>
@@ -156,7 +156,7 @@ export default function Contact() {
                   <div className="sm:col-span-2">
                     <button
                       type="submit"
-                      className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                      className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
                     >
                       <Emoji className="mr-2" symbol="📇" label="cool"/>
                       Prendre contact
