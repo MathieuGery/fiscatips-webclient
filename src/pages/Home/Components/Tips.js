@@ -3,7 +3,7 @@ import { ScaleIcon } from "@heroicons/react/outline";
 export default function Tips() {
   return (
     <div className="mx-full  flex justify-center">
-      <section className="bg-primary-800 rounded-2xl m-5">
+      <section className="bg-primary-700 rounded-2xl m-5">
         <div className="max-w-7xl mx-auto lg:px-8">
           <div className="py-12 px-4 sm:px-6 lg:pr-16">
             <div className="">
