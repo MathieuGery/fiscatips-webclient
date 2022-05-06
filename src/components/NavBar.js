@@ -3,10 +3,10 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'Acceuil', href: '/' },
-  { name: 'FiscaTips', href: '#' },
-  { name: 'Actualités', href: '#' },
-  { name: 'Blog', href: '#' },
+  { name: 'Aceuil', href: '/' },
+  { name: 'Particulier', href: '/individual' },
+  { name: 'Société', href: '/company' },
+  { name: 'Gérant', href: '/manager' },
   { name: 'L\'Equipe', href: '/team' },
 ]
 

@@ -1,10 +1,10 @@
 /* This example requires Tailwind CSS v2.0+ */
 const navigation = {
     main: [
-      { name: 'Acceuil', href: '/' },
-      { name: 'FiscaTips', href: '#' },
-      { name: 'Actualités', href: '#' },
-      { name: 'Blog', href: '#' },
+      { name: 'Aceuil', href: '/' },
+      { name: 'Particulier', href: '/individual' },
+      { name: 'Société', href: '/company' },
+      { name: 'Gérant', href: '/manager' },
       { name: 'L\'Equipe', href: '/team' },
     ],
 
