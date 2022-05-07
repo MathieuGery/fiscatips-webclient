@@ -1,11 +1,5 @@
 import NavBar from "../../components/NavBar";
-import { useState } from 'react'
-import { Switch } from '@headlessui/react'
 import Emoji from "../../components/Emoji";
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
 
 export default function Contact() {
   return (
