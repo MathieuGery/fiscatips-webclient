@@ -9,7 +9,7 @@ export default function MemberComponent(props) {
               <h3>{props.person.first_name}</h3>
               <p className="text-primary-600">{props.person.role}</p>
             </div>
-            <ul role="list" className="flex justify-center space-x-5">
+            <ul className="flex justify-center space-x-5">
               <li>
                 <a href={props.person.twitter} className="text-gray-400 hover:text-gray-500">
                   <span className="sr-only">Twitter</span>
