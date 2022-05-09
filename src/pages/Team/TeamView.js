@@ -1,28 +1,27 @@
+import { useEffect, useState } from "react";
 import NavBar from "../../components/NavBar";
+import { getAllTeamMembers } from "../../services";
 import MemberComponent from "./Components/Member";
 
 /* This example requires Tailwind CSS v2.0+ */
-const people = [
-  {
-    name: 'Whitney Francis',
-    role: 'Copywriter',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  {
-    name: 'Whitney Francis',
-    role: 'Copywriter',
-    imageUrl:
-      'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
-    twitterUrl: '#',
-    linkedinUrl: '#',
-  },
-  // More people...
-]
+// const people = [
+//   {
+//     name: 'Whitney Francis',
+//     role: 'Copywzriter',
+//     imageUrl:
+//       'https://images.unsplash.com/photo-1517365830460-955ce3ccd263?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80',
+//     twitterUrl: '#',
+//     linkedinUrl: '#',
+//   }
+// ]
 
 export default function Team() {
+  const [peoples, setPeoples] = useState([]);
+
+  useEffect(() => {
+    getAllTeamMembers().then((resp) => setPeoples(resp.data))
+  }, [])
+
   return (
     <>
       <div className="relative bg-white overflow-hidden">
@@ -41,7 +40,7 @@ export default function Team() {
                 role="list"
                 className="mx-auto space-y-16 sm:grid sm:grid-cols-2 sm:gap-16 sm:space-y-0 lg:grid-cols-3 lg:max-w-5xl"
               >
-                {people.map((person) => (<MemberComponent person={person} />))}
+              {peoples.map((peoples) => (<MemberComponent key={peoples.id} person={peoples.attributes}/>))}
               </ul>
             </div>
           </div>
@@ -50,4 +49,3 @@ export default function Team() {
     </>
   )
 }
-

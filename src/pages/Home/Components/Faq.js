@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 const faqs = [
     {
-      id: 1,
+      id: 0,
       question: "What's the best thing about Switzerland?",
       answer:
         "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
@@ -13,25 +13,25 @@ const faqs = [
           "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
       },
       {
-        id: 1,
+        id: 2,
         question: "What's the best thing about Switzerland?",
         answer:
           "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
       },
       {
-        id: 1,
+        id: 3,
         question: "What's the best thing about Switzerland?",
         answer:
           "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
       },
       {
-        id: 1,
+        id: 4,
         question: "What's the best thing about Switzerland?",
         answer:
           "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
       },
       {
-        id: 1,
+        id: 5,
         question: "What's the best thing about Switzerland?",
         answer:
           "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
