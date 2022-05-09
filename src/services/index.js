@@ -5,4 +5,5 @@
  * I think it makes is easy to maintain when you have a long long list as your app gradually scales.
  */ 
 
-export {getAllTeamMembers} from "./teamServices"
+export {getAllTeamMembers} from "./teamServices";
+export {getAllFaqs} from "./faqServices";
