@@ -1,5 +1,4 @@
 export default function MemberComponent(props) {
-  console.log(props.person.email)
   return (
     <>
       <li key={props.person.first_name}>
