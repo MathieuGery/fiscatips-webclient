@@ -1,5 +1,3 @@
-import { tab } from "@testing-library/user-event/dist/tab"
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }

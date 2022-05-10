@@ -1,7 +1,24 @@
 import NavBar from "../../components/NavBar";
 import Emoji from "../../components/Emoji";
+import { postContact } from "../../services/contactServices";
+import { useState } from "react";
 
 export default function Contact() {
+  const [lastName, setLastName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+
+  const handleClick = () => {
+    if (firstName !== "" && lastName !== "" && email !== "" && message !== "" && phone !== "") {
+      postContact(firstName, lastName, email, phone, message).then((resp) => (
+        console.log(resp), setEmail(""), setPhone(""), setEmail(""), setFirstName(""), setLastName(""), setMessage("")
+      ))
+    }
+  }
+
   return (
     <>
       <div className="relative bg-white overflow-hidden">
@@ -72,6 +89,8 @@ export default function Contact() {
                         name="first-name"
                         id="first-name"
                         autoComplete="given-name"
+                        value={lastName}
+                        onChange={(event => (event.preventDefault(), setLastName(event.target.value)))}
                         className="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border-gray-300 rounded-md"
                       />
                     </div>
@@ -86,6 +105,8 @@ export default function Contact() {
                         name="last-name"
                         id="last-name"
                         autoComplete="family-name"
+                        value={firstName}
+                        onChange={(event => setFirstName(event.target.value))}
                         className="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border-gray-300 rounded-md"
                       />
                     </div>
@@ -100,6 +121,8 @@ export default function Contact() {
                         name="email"
                         type="email"
                         autoComplete="email"
+                        value={email}
+                        onChange={(event => setEmail(event.target.value))}
                         className="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border-gray-300 rounded-md"
                       />
                     </div>
@@ -128,6 +151,8 @@ export default function Contact() {
                         name="phone-number"
                         id="phone-number"
                         autoComplete="tel"
+                        value={phone}
+                        onChange={(event => setPhone(event.target.value))}
                         className="py-3 px-4 block w-full pl-20 focus:ring-primary-500 focus:border-primary-500 border-gray-300 rounded-md"
                         placeholder="+33 6 06 06 06 06"
                       />
@@ -142,6 +167,8 @@ export default function Contact() {
                         id="message"
                         name="message"
                         rows={4}
+                        value={message}
+                        onChange={(event => setMessage(event.target.value))}
                         className="py-3 px-4 block w-full shadow-sm focus:ring-primary-500 focus:border-primary-500 border border-gray-300 rounded-md"
                         defaultValue={''}
                       />
@@ -149,10 +176,10 @@ export default function Contact() {
                   </div>
                   <div className="sm:col-span-2">
                     <button
-                      type="submit"
+                      onClick={(event => (event.preventDefault(), handleClick()))}
                       className="w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500"
                     >
-                      <Emoji className="mr-2" symbol="📇" label="cool"/>
+                      <Emoji className="mr-2" symbol="📇" label="cool" />
                       Prendre contact
                     </button>
                   </div>
