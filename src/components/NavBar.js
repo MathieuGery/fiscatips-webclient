@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import Logo from '../assets/logo.jpg'
 
 const navigation = [
   { name: 'Aceuil', href: '/' },
@@ -32,7 +33,7 @@ export default function NavBar() {
                   <span className="sr-only">Workflow</span>
                   <img
                     className="h-8 w-auto sm:h-10"
-                    src="https://tailwindui.com/img/logos/workflow-mark-blue-600.svg"
+                    src={Logo}
                   />
                 </a>
                 <div className="-mr-2 flex items-center md:hidden">
