@@ -6,7 +6,7 @@ export default function MemberComponent(props) {
           <img className="mx-auto h-40 w-40 rounded-full xl:w-56 xl:h-56" src={"https://strapi.gery.me" + props.person.photo.data[0].attributes.url} alt="" />
           <div className="space-y-2">
             <div className="text-lg leading-6 font-medium space-y-1">
-              <h3>{props.person.first_name}</h3>
+              <h3>{props.person.first_name} {props.person.last_name}</h3>
               <p className="text-primary-600">{props.person.role}</p>
             </div>
             <ul className="flex justify-center space-x-5">
