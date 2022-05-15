@@ -1,7 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 const navigation = {
     main: [
-      { name: 'Aceuil', href: '/' },
+      { name: 'Accueil', href: '/' },
       { name: 'Particulier', href: '/individual' },
       { name: 'Autoentrepreneur', href: '/company' },
       { name: 'Dirigeant', href: '/manager' },

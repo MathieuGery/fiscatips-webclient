@@ -4,7 +4,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Logo from '../assets/logo.jpg'
 
 const navigation = [
-  { name: 'Aceuil', href: '/' },
+  { name: 'Accueil', href: '/' },
   { name: 'Particulier', href: '/individual' },
   { name: 'Autoentrepreneur', href: '/company' },
   { name: 'Dirigeant', href: '/manager' },
