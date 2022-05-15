@@ -13,7 +13,7 @@ export default function HeroSection() {
 
   return (
     <>
-      <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+      <main className="max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
         {isLoading ? <Spinner /> :
           <div className="sm:text-center lg:text-left">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
@@ -24,12 +24,11 @@ export default function HeroSection() {
               {heading}
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-              <div className="rounded-md shadow">
+              <div className="rounded-md shadow mt-3 sm:mt-0 sm:ml-3">
                 <a
                   href="/individual"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 md:py-4 md:text-lg md:px-10"
                 >
-                  <Emoji className="mr-2" symbol="😎" label="cool" />
                   Particulier
                 </a>
               </div>
@@ -38,21 +37,20 @@ export default function HeroSection() {
                   href="/company"
                   className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 md:py-4 md:text-lg md:px-10"
                 >
-                  <Emoji className="mr-2" symbol="🏦" label="bank" />
-                  Société
+                  Autoentrepreneur
                 </a>
               </div>
               <div className="rounded-md shadow mt-3 sm:mt-0 sm:ml-3">
                 <a
                   href="/manager"
-                  className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 md:py-4 md:text-lg md:px-10"
+                  className="flex items-center justify-center py-8 px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 md:py-4 md:text-lg md:px-10"
                 >
-                  <Emoji className="mr-2" symbol="👨‍💻" label="work" />
-                  Gérant
+                  Dirigeant
                 </a>
               </div>
             </div>
           </div>
+
         }
       </main>
     </>

@@ -5,8 +5,8 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 const navigation = [
   { name: 'Aceuil', href: '/' },
   { name: 'Particulier', href: '/individual' },
-  { name: 'Société', href: '/company' },
-  { name: 'Gérant', href: '/manager' },
+  { name: 'Autoentrepreneur', href: '/company' },
+  { name: 'Dirigeant', href: '/manager' },
   { name: 'L\'Equipe', href: '/team' },
 ]
 
