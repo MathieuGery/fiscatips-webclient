@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Fiscatips",
+  "name": "Des étudiants en Droit Fiscal prêts à vous aider et vous conseiller.",
   "icons": [
     {
       "src": "favicon.ico",
